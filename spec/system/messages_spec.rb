@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Messages", type: :system do
+RSpec.describe "メッセージ投稿機能", type: :system do
   before do
-    driven_by(:rack_test)
+    # 中間テーブルを作成して、usersテーブルとroomsテーブルのレコードを作成する
+    @room_user = FactoryBot.create(:room_user)
   end
 
   context '投稿に失敗したとき' do
