@@ -6,7 +6,7 @@ RSpec.describe "チャットルームの削除機能", type: :system do
   end
 
   it 'チャットルームを削除すると、関連するメッセージがすべて削除されていること' do
-    # サインインする
+    # サインインす
     sign_in(@room_user.user)
 
     # 作成されたチャットルームへ遷移する
