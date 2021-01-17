@@ -10,7 +10,7 @@ RSpec.describe "ユーザーログイン機能", type: :system do
   end
 
   it 'ログインに成功し、トップページに遷移する' do
-    # 予め、ユーザーをDBに保存す
+    # 予め、ユーザーをDBに保存する
     @user = FactoryBot.create(:user)
 
     # サインインページへ移動する
