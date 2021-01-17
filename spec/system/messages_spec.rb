@@ -10,7 +10,7 @@ RSpec.describe "Messages", type: :system do
       # サインインす
       sign_in(@room_user.user)
 
-      # 作成されたチャットルームへ遷移する
+      # 作成されたチャットルームへ遷移す
       click_on(@room_user.room.name)
 
       # DBに保存されていないことを確認する
